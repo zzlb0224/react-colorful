@@ -23,8 +23,10 @@ export const useStyleSheet = (nodeRef: RefObject<HTMLDivElement>): void => {
       // Conform to CSP rules by setting `nonce` attribute to the inline styles
       const nonce = getNonce();
       if (nonce) styleElement.setAttribute("nonce", nonce);
-
-      parentDocument.head.appendChild(styleElement);
+      if (parentDocument.head)
+        parentDocument.head.appendChild(styleElement);
+      else
+        parentDocument.children[0].appendChild(styleElement)
     }
   }, []);
 };
