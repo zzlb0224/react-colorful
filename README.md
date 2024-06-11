@@ -1,3 +1,5 @@
+<h1>This is a version I use myself, please use the omgovich/react-colorful version</h1>
+
 <div align="center">
   <a href="https://omgovich.github.io/react-colorful">
     <img src="demo/src/assets/design.png" width="229" height="233" alt="react-colorful" />
@@ -50,8 +52,13 @@
 
 ## Table of Contents
 
+- [Features](#features)
+- [Live demos](#live-demos)
+- [Table of Contents](#table-of-contents)
 - [Getting Started](#getting-started)
 - [Supported Color Models](#supported-color-models)
+  - [Available pickers](#available-pickers)
+  - [Code example](#code-example)
 - [Customization](#customization)
 - [How to paste or type a color?](#how-to-paste-or-type-a-color)
 - [Code Recipes](#code-recipes)
@@ -60,6 +67,7 @@
 - [Browser Support](#browser-support)
 - [Why react-colorful?](#why-react-colorful)
 - [Projects using react-colorful](#projects-using-react-colorful)
+- [Backers and sponsors](#backers-and-sponsors)
 - [Ports](#ports)
 
 ## Getting Started
