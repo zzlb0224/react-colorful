@@ -20,8 +20,11 @@ const getTouchPoint = (touches: TouchList, touchId: null | number): Touch => {
 };
 
 // Finds the proper window object to fix iframe embedding issues
-const getParentWindow = (node?: HTMLDivElement | null): Window => {
-  return (node && node.ownerDocument.defaultView) || self;
+const getParentWindow = (node: HTMLDivElement | null): Window => {
+  // if (!node) {
+  //   console.log("error node is null");
+  // }
+  return (node && node.ownerDocument.defaultView) || window || global.window;
 };
 
 // Returns a relative position of the pointer inside the node's bounding box

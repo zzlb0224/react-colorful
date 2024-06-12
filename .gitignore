@@ -14,7 +14,7 @@ node_modules/
 
 # bundler
 .cache
-dist/
+
 
 # OSX
 .DS_Store
